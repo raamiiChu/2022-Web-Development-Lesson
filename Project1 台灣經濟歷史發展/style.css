@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+header {
+    width: 100%;
+    padding: 1rem;
+    background-color: #c4c4c4;
+}
+
+.header-title {
+    font-size: 2.5rem;
+}
+
+.header-text {
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: #3d383c;
+}
+
+nav ul {
+    display: flex;
+    padding-left: 1rem;
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+
+    color: #c1c1c1;
+
+    font-size: 1.25rem;
+    text-decoration: none;
+
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3d383c;
+    background: #fff;
+}
+
+.active {
+    color: #fff;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.left,
+.right {
+    padding: 1.5rem;
+}
+
+.left {
+    flex: 4 1 550px;
+}
+
+#curve_chart {
+    width: 100%;
+    height: 80%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 250px;
+}
+
+.right h4 {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.right p {
+    padding: 1rem 0rem;
+}
+
+.right iframe {
+    border-radius: 10%;
+}
+
+@media screen and (max-width: 650px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #curve_chart {
+        width: 100%;
+        height: 40%;
+    }
+}
