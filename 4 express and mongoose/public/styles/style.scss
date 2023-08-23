@@ -1,0 +1,29 @@
+a {
+    color: white;
+}
+
+body {
+    color: white;
+    background-color: rgb(58, 58, 58);
+}
+
+table,
+tr,
+td {
+    padding: 0.25rem;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+table {
+    margin: 0.25rem 0;
+}
+
+li {
+    padding: 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+form.delete-btn {
+    display: inline;
+}

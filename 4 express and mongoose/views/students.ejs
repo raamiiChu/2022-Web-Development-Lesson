@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Students Page</title>
+
+        <link rel="stylesheet" href="/styles/style.css" />
+    </head>
+    <body>
+        <ul>
+            <% data.forEach((student)=>{%>
+            <li>
+                <a href="/students/<%= student.id %>"><%= student.name %></a>
+                <a href="/students/edit/<%= student.id %>">Edit</a>
+                <form
+                    action="/students/delete/<%= student.id %>?_method=DELETE"
+                    method="post"
+                    class="delete-btn"
+                >
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+            <%}) %>
+        </ul>
+
+        <a href="/students/insert">Add a new student</a>
+    </body>
+</html>
