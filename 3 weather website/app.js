@@ -6,7 +6,7 @@ import ejs from "ejs";
 import fetch from "node-fetch";
 
 // api key
-const KEY = "4a8df43351b52806cbd9c10217846929";
+const KEY = "";
 
 // kelvin to celsius
 function kelvinToCelsius(k) {
