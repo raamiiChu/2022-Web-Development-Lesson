@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><%= data.name %> - <%= data.sys.country %></title>
+
+        <link rel="stylesheet" href="/styles/style.css" />
+    </head>
+    <body>
+        <h1><%= data.name %> Weather Now</h1>
+        <table>
+            <tr>
+                <td>Main Weather</td>
+                <td><%= data.weather[0].main %></td>
+            </tr>
+            <tr>
+                <td>Weather Description</td>
+                <td><%= data.weather[0].description %></td>
+            </tr>
+            <tr>
+                <td>Temperature</td>
+                <td><%= temperature %></td>
+            </tr>
+        </table>
+    </body>
+</html>
