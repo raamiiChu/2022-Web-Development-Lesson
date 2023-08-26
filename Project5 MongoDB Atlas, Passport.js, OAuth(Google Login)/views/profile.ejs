@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include ("partials/header") %>
+        <title>Login</title>
+    </head>
+    <body>
+        <%- include ("partials/nav") %>
+        <h1>Welcome to <%= user.name %>'s page</h1>
+        <img src="<%= user.thumbnail %>" alt="" />
+        <p><%= user.googleId %></p>
+        <p><%= user.date %></p>
+
+        <% posts.forEach(post => { %>
+        <div class="card" style="width: 18rem">
+            <div class="card-body">
+                <h5 class="card-title"><%= post.title %></h5>
+                <p class="card-text"><%= post.content %></p>
+                <a href="#" class="btn btn-primary"><%= post.date %> </a>
+            </div>
+        </div>
+        <% }) %>
+    </body>
+</html>
