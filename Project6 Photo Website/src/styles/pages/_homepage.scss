@@ -1,0 +1,19 @@
+.more-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 4rem;
+
+    button {
+        cursor: pointer;
+
+        padding: 0.25rem 0.5rem;
+        border: none;
+
+        color: white;
+        background-color: rgb(73, 0, 73);
+
+        font-size: 2rem;
+    }
+}

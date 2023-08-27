@@ -1,0 +1,28 @@
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3rem 0;
+
+    form {
+        input,
+        button {
+            padding: 0.25rem;
+            border: 3px solid rgb(43, 0, 43);
+
+            font-size: 2rem;
+        }
+
+        button {
+            cursor: pointer;
+
+            color: white;
+            background-color: rgb(73, 1, 73);
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
